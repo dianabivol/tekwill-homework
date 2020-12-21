@@ -1,5 +1,5 @@
 package com.tekwill.learning.basics.acessmodifiers.testing;
-import com.tekwill.learning.basics.accessmodifiers.software.Employee
+import com.tekwill.learning.basics.accessmodifiers.software.Employee;
 public class Tester extends Employee {
     Employee employee;
 
