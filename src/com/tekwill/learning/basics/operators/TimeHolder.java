@@ -12,12 +12,10 @@ public class TimeHolder {
             long seconds = scanner.nextLong();
             long days = seconds / SECONDS_IN_1DAY;
             long restFromDays = seconds % SECONDS_IN_1DAY;
-
+            long restFromHours = restFromDays % SECONDS_IN_1HOUR;
             long minutes = restFromHours / SECONDS_IN_1MINUTE;
             long restSeconds = restFromHours % SECONDS_IN_1MINUTE;
-
             long hours = restFromDays / SECONDS_IN_1HOUR;
-            long restFromHours = restFromDays % SECONDS_IN_1HOUR;
 
             System.out.println(seconds + " seconds = " + days + " days, " + hours + " hours, " + minutes + " minutes, " +restSeconds + " seconds.");
 
